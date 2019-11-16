@@ -4,7 +4,7 @@
 
 As we've seen, JavaScript functions take values as arguments and return values. JavaScript functions are values, so JavaScript functions can take functions as arguments, return functions, or both. Generally speaking, a function that either takes functions as arguments or returns a function (or both) is referred to as a "higher-order" function.
 
-Here's very simple higher-order function that takes a function as an argument:
+Here's a very simple higher-order function that takes a function as an argument:
 
     function repeat (num, fn) {
       var i, value;
@@ -84,13 +84,13 @@ A *function decorator* is a higher-order function that takes one function as an 
       }
     }
 
-So instead of writing `!someFunction(42)`, you can write `not(someFunction)(42)`. Hardly progress. But like `compose`, you could write either
+So instead of writing `!someFunction(42)`, you can write `not(someFunction)(42)`. Hardly progress. But like for `compose`, if you have:
 
     function something (x) {
       return x != null
     }
 
-And elsewhere, he writes:
+Then you could write either:
 
     function nothing (x) {
       return !something(x)

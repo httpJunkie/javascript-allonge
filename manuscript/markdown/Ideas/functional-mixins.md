@@ -12,6 +12,7 @@ Here's an evolved class of todo items we saw earlier:
                  : new Todo();
       self.name = name || 'Untitled';
       self.done = false;
+      return self;
     };
     
     Todo.prototype.do = fluent( function () {
@@ -112,4 +113,4 @@ This approach has some subtle benefits: You can use mixins as methods, for examp
 Bueno!
 
 [fm]: https://javascriptweblog.wordpress.com/2011/05/31/a-fresh-look-at-javascript-mixins/ "A fresh look at JavaScript Mixins"
-[Flight]: https://twitter.github.com/flight
+[Flight]: http://flightjs.github.io/
